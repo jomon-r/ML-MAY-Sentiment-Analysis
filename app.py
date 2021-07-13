@@ -1,7 +1,7 @@
 import streamlit as st
 import joblib
 st.title('Spam Ham Deployment')
-test_model = joblib.load('/content/drive/MyDrive/ML MAY BATCH MAJOR PROJECT/Sentiment-Analysis')
+test_model = joblib.load('Sentiment-Analysis')
 ip = st.text_input('Enter your message')
 op = test_model.predict([ip])
 if op[0] == '1':
